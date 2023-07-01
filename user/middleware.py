@@ -37,11 +37,18 @@ class JWTAuthenticationMiddleware:
         Returns:
             django.http.HttpResponse: The HTTP response.
         """
-        excluded_paths = ["/user/register/", "/user/login/", "/user/logout/"]
+        excluded_paths = [
+            "/user/register/",
+            "/user/login/",
+            "/user/logout/",
+            "/api/schema/",
+            "/api/docs/",
+        ]
         path = request.path_info
 
         # Exclude paths that do not require authentication
         if path in excluded_paths:
+            print(path)
             auth_header = request.headers.get("Authorization")
             response = self.get_response(request)
             return response
