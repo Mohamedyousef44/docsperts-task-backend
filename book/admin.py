@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models.page import Page
+from .models.book import Book
 
-# Register your models here.
+
+admin.site.register(Book)
+admin.site.register(Page)
