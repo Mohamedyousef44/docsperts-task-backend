@@ -7,31 +7,31 @@ Before you can use the Django REST Framework project, you will need:
 - Python 3.x installed on your system
 - pip package manager installed on your
 
-Clone the project
+1. Clone the project
 
 ### `git clone https://github.com/Mohamedyousef44/docsperts-task-backend`
 
-Create a virtual environment
+2. Create a virtual environment
 
 ### `python -m venv my_env `
 
-Activate the virtual environment
+3. Activate the virtual environment
 
-for linux:
+- for linux:
 
 ### `source env/bin/activate`
 
-for windows:
+- for windows:
 
 ### `Scripts\activate`
 
-Install required packages
+4. Install required packages
 
 ### `pip install -r requirements.txt`
 
-Override the .env.example with your credentials
+5. Override the .env.example with your credentials
 
-Run the server
+6. Run the server
 
 ### `python manage.py runserver`
 
